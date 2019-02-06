@@ -46,7 +46,7 @@ class PhotoController extends Controller
             $photo->path = $this->uploadImg($request->file('photo'), 'submissions/img');
             $photo->thumbnail_path = $this->createThumbnail($photo->path, 1200, null, 'submissions/img/thumbs');
         } catch (\Exception $exception) {
-            return response('Ooops, something went wrong', 500);
+            return response($exception, 500);
         }
 
         $photo->save();
