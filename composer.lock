@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "c2277a38c3a91bb1e8966aa9880aa3d4",
@@ -434,20 +434,24 @@
         },
         {
             "name": "erusev/parsedown",
-            "version": "1.6.1",
+            "version": "1.7.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/erusev/parsedown.git",
-                "reference": "20ff8bbb57205368b4b42d094642a3e52dac85fb"
+                "reference": "cb17b6477dfff935958ba01325f2e8a2bfa6dab3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/erusev/parsedown/zipball/20ff8bbb57205368b4b42d094642a3e52dac85fb",
-                "reference": "20ff8bbb57205368b4b42d094642a3e52dac85fb",
+                "url": "https://api.github.com/repos/erusev/parsedown/zipball/cb17b6477dfff935958ba01325f2e8a2bfa6dab3",
+                "reference": "cb17b6477dfff935958ba01325f2e8a2bfa6dab3",
                 "shasum": ""
             },
             "require": {
+                "ext-mbstring": "*",
                 "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8.35"
             },
             "type": "library",
             "autoload": {
@@ -472,7 +476,11 @@
                 "markdown",
                 "parser"
             ],
-            "time": "2016-11-02T15:56:58+00:00"
+            "support": {
+                "issues": "https://github.com/erusev/parsedown/issues",
+                "source": "https://github.com/erusev/parsedown/tree/1.7.x"
+            },
+            "time": "2019-12-30T22:54:17+00:00"
         },
         {
             "name": "evenement/evenement",
@@ -4237,55 +4245,6 @@
             "time": "2015-05-11T14:41:42+00:00"
         },
         {
-            "name": "laravelcollective/remote",
-            "version": "v5.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/LaravelCollective/remote.git",
-                "reference": "8fad4e9d289b1ec23d7ba80ffae8fad778928694"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/LaravelCollective/remote/zipball/8fad4e9d289b1ec23d7ba80ffae8fad778928694",
-                "reference": "8fad4e9d289b1ec23d7ba80ffae8fad778928694",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/filesystem": "5.4.*",
-                "illuminate/support": "5.4.*",
-                "php": ">=5.6.4",
-                "phpseclib/phpseclib": "^2.0"
-            },
-            "require-dev": {
-                "illuminate/console": "5.4.*",
-                "mockery/mockery": "~0.9.4",
-                "phpunit/phpunit": "~5.5"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Collective\\Remote\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Tom Shafer",
-                    "email": "tj@tjshafer.com"
-                },
-                {
-                    "name": "Taylor Otwell",
-                    "email": "taylorotwell@gmail.com"
-                }
-            ],
-            "description": "Remote for The Laravel Framework.",
-            "homepage": "http://laravelcollective.com",
-            "time": "2017-01-30T23:14:26+00:00"
-        },
-        {
             "name": "mockery/mockery",
             "version": "0.9.7",
             "source": {
@@ -5555,65 +5514,6 @@
             "time": "2017-01-03T13:51:32+00:00"
         },
         {
-            "name": "understand/understand-laravel5",
-            "version": "v0.0.10",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/understand/understand-laravel5.git",
-                "reference": "c1dc080f19e301743ee662df61b6bfa442234545"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/understand/understand-laravel5/zipball/c1dc080f19e301743ee662df61b6bfa442234545",
-                "reference": "c1dc080f19e301743ee662df61b6bfa442234545",
-                "shasum": ""
-            },
-            "require": {
-                "ext-curl": "*",
-                "illuminate/support": "~5.0",
-                "php": ">=5.5.0"
-            },
-            "require-dev": {
-                "mockery/mockery": "^0.9.4",
-                "orchestra/testbench": "~3.1",
-                "phpunit/phpunit": "~4.0"
-            },
-            "type": "library",
-            "extra": {
-                "component": "package",
-                "frameworks": [
-                    "Laravel 5"
-                ],
-                "branch-alias": {
-                    "dev-master": "0.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Understand\\UnderstandLaravel5\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Aivis",
-                    "email": "aivis.silins@gmail.com"
-                }
-            ],
-            "description": "Laravel 5 service provider for Understand.io",
-            "keywords": [
-                "laravel",
-                "laravel 5",
-                "logs",
-                "understand",
-                "undertstand.io"
-            ],
-            "time": "2016-12-16T13:41:20+00:00"
-        },
-        {
             "name": "webmozart/assert",
             "version": "1.2.0",
             "source": {
@@ -5674,5 +5574,6 @@
     "platform": {
         "php": ">=5.6.4"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "2.2.0"
 }
